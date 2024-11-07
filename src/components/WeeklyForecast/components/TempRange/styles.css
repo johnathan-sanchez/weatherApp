@@ -1,0 +1,28 @@
+.temp-range {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .temp-range_temp-label{
+    font-size: 14px;
+    text-align: center;
+    width: 40px;
+  }
+  
+  .temp-range_bar-container {
+    flex: 1;
+    position: relative;
+    background-color: #00000020;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .temp-range_bar {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+  }
