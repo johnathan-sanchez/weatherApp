@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { LocationButton } from "./components/LocationButton";
+import { Landscape } from "./components/Background/components/Landscape"
+import { Forecast } from "./components/Forecast"
+import { useState } from "react";
 
 function App() {
+  const [location,setLocation]=useState("New York");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Landscape weather={"Rainy"}/>
+      <Forecast location={location}/>
+      <LocationButton/>
     </div>
   );
 }
