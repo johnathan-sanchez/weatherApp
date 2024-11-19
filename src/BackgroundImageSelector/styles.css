@@ -1,0 +1,14 @@
+.background-image-selector__thumbnail{
+    height: 100px;
+    width: 100px;
+}
+.background-image-selector__label{
+    font-size:12px;
+}
+.background-image-selector__root{
+    border:1px solid gray;
+    border-radius: 8px;
+}
+.background-image-selector__root:hover{
+    border:1px solid rgb(57, 57, 57);
+}
