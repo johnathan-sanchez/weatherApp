@@ -1,14 +1,56 @@
 .background-image-selector__thumbnail{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
 }
 .background-image-selector__label{
-    font-size:12px;
+    font-size:3vw;
 }
 .background-image-selector__root{
     border:1px solid gray;
     border-radius: 8px;
+    height: 240px;
+    width: 200px;
 }
 .background-image-selector__root:hover{
     border:1px solid rgb(57, 57, 57);
+}
+.toggle-button{
+    display:grid;
+    height: 50px;
+    width: 50px;
+    font-size: xx-large;
+    position: fixed;
+    top: 10vh;
+    left:4vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: bisque;
+}
+.selection-preview{
+    position: fixed;
+    /* left: 15vw; Center horizontally
+    top: 10vh; */
+    margin:10vw ;
+    width:auto;
+    display:inline-grid;
+    grid-template-columns:repeat(2,200px);
+    gap:5vw;
+    /* width: 70vw;
+    height: 70vh; */
+    background-color: aliceblue;
+    justify-content: center;
+    z-index: 3;
+    box-sizing: border-box;
+    padding: 10px;
+    place-items: center;
+    overflow: scroll;
+}
+@media screen and (max-width: 800px) {
+    .selection-preview {
+        grid-template-columns: repeat(1, 200px); /* Switch to 1 column */
+        gap: 10vh; /* Optional: reduce gap for smaller screens */
+        width: 320px;
+        left: 100px;
+    }
 }

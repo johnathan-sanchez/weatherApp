@@ -1,1 +1,15 @@
-.App{}
+.App{
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+    margin: -10px;
+    background-color: lightblue;
+}
+html{
+    overflow: hidden;
+}
+select{
+    align-items: center;
+    width:50vw;
+    margin:auto;
+}

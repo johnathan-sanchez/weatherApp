@@ -1,22 +1,18 @@
 import { LocationButton } from "./components/LocationButton";
-import { BackgroundImage } from "./BackgroundImage"
-import { Forecast } from "./components/Forecast"
+import { BackgroundImage } from "./BackgroundImage";
+import { Content } from "./Content";
 import { useState } from "react";
-import { BackgroundImageSelector} from "./BackgroundImageSelector"
+import { BackgroundImageSelector} from "./BackgroundImageSelector";
+import {Weather} from "./api/Weather";
+import "./App.css";
 
 
 function App() {
-  const [location,setLocation]=useState("New York");
-  const [backgroundImage,setBackgroundImage]=useState("village");
-  const handleBackgroundImageThumbnailClick=(label)=>{
-    setBackgroundImage(label);
-  };
+
   return (
     <div className="App">
-      <BackgroundImageSelector onImageClick={handleBackgroundImageThumbnailClick}/>
-      <BackgroundImage weather={"Rainy"} image={backgroundImage}/>
-      <Forecast location={location}/>
-      <LocationButton/>
+      <BackgroundImage/>
+      <Content/>
     </div>
   );
 }

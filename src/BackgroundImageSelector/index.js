@@ -13,7 +13,7 @@ export const BackgroundImageSelector = ({onImageClick}) => {
     };
     return (
         <>
-        <div className="toggle-button" style={{ height: "30px", width: "30px", backgroundColor: "red" }} onClick={toggleVisibility}>select</div>
+        <div className="toggle-button fa-solid fa-image"  onClick={toggleVisibility}></div>
         {isVisible &&(
             <div className="selection-preview">
             {backgroundImageOptions.map((option) => {
