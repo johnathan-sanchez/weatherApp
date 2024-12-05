@@ -1,20 +1,17 @@
 import "./styles.css";
-export const LocationButton = ({currentLocationHandler}) => {
-
-  const options = 
-
-  [{ label: 'Current Location', value: 'current-location'},
-  { label: 'New York', value: 'new-york' },
-  {label:'New Jersey',value:'new-jersey'}];
-
-  const handleSelection=(e)=>{
-    if(e=='current-location'){
-      currentLocationHandler();
-  }};
+export const LocationButton = ({ currentLocationHandler }) => {
+  const handleClick = () => {
+    console.log("clicked");
+    currentLocationHandler();
+  };
 
   return (
-    <select className="LocationButton_city-select-button" id="cities" onChange={(e) => handleSelection(e.target.value)}>
-      {options.map(option => <option value={option.value}>{option.label}</option>)}
-    </select>
-  )
-}
+    <button
+      className="LocationButton_city-select-button"
+      id="cities"
+      onClick={handleClick}
+    >
+      Get my location
+    </button>
+  );
+};
