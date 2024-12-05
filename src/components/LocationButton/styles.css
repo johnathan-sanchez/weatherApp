@@ -1,4 +1,23 @@
-.LocationButton_city-select-button{
-    position: relative;
-    bottom: 30vh;
+.LocationButton_city-select-button {
+  /* POSITIONING */
+  position: relative;
+  bottom: 35vh;
+  left: 40%;
+
+  /* STYLE */
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 1000px;
+  border: 0;
+  padding: 12px 12px;
+  background-color: #549ebe87;
+  backdrop-filter: blur(4px);
+  color: white;
+  font-size: 20px;
+  transition: all 0.2s;
+}
+
+.LocationButton_city-select-button:hover {
+  transform: scale(1.1);
+  background-color: #3c728a87;
 }
