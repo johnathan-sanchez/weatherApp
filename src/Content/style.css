@@ -1,7 +1,21 @@
-.Forecast{
-    font-size: large;
-    position: relative;
-    margin: auto;
-    align-items: center;
-    bottom: 80vh;
+.Forecast {
+  font-size: large;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  bottom: 80vh;
+}
+
+.current-temperature {
+  font-family: sans-serif;
+  font-size: 100px;
+  text-shadow: 4px 4px 0px #f46237;
+  color: white;
+}
+
+.current-location {
+  font-family: sans-serif;
+  font-size: 30px;
+  text-shadow: 2px 2px 0px #f46237;
+  color: white;
 }
